@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import "./ImageCard.module.css";
+import styles from  "./ImageCard.module.css";
 
 const ImageCard = ({ image, onClick }) => {
   return (
-    <div onClick={onClick}>
-      <img className='img' src={image.urls.small} alt={image.alt_description} />
+    <div className={styles.img_wrapper} onClick={onClick}>
+      <img className={styles.images} src={image.urls.small} alt={image.alt_description} />
     </div>
   );
 };

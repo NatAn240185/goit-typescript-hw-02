@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import ImageCard from "../ImageCard/ImageCard";
-import "./ImageGallery.module.css";
+import styles from "./ImageGallery.module.css";
 const ImageGallery = ({ images, onImageClick }) => {
   return (
-    <ul className='list'>
+    <ul className={styles.list}>
       {images.map((image) => (
         <li key={image.id}>
           <ImageCard image={image} onClick={() => onImageClick(image)} />
