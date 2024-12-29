@@ -1,6 +1,9 @@
-.list {
+.imgList {
     list-style: none;
     display: flex;
-    gap: 5px;
+    gap: 10px;
     flex-wrap: wrap;
   }
+  .itemGallery {
+    width: calc((100% - 60px) / 4);
+}
